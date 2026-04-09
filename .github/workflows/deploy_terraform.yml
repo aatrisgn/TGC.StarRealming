@@ -41,7 +41,7 @@ jobs:
         -backend-config=resource_group_name="${{ secrets.RESOURCE_GROUP_REFERENCE }}" \
         -backend-config=storage_account_name="${{ secrets.STORAGE_ACCOUNT_REFERENCE }}" \
         -backend-config=container_name="${{ secrets.CONTAINER_NAME_REFERENCE }}" \
-        -backend-config=key="KEY_NAME"
+        -backend-config=key="tgc.starrealming.dev.tfstate"
         
     # - name: Terraform Validate
     #   run: terraform validate

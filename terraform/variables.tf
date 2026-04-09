@@ -1,9 +1,3 @@
-variable "subscription_id" {
-  description = "The Azure subscription ID to deploy resources into."
-  type        = string
-  sensitive   = true
-}
-
 variable "environment" {
   description = "The deployment environment (dev, tst, prd)."
   type        = string
