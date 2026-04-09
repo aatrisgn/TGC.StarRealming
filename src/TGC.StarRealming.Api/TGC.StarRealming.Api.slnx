@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="TGC.Api.Communication/TGC.Api.Communication.csproj" />
+  <Project Path="TGC.StarRealming.Api/TGC.StarRealming.Api.csproj" />
+  <Project Path="TGC.StarRealming.Application/TGC.StarRealming.Application.csproj" />
+  <Project Path="TGC.StarRealming.Domain/TGC.StarRealming.Domain.csproj" />
+  <Project Path="TGC.StarRealming.Integrations/TGC.StarRealming.Integrations.csproj" />
+</Solution>

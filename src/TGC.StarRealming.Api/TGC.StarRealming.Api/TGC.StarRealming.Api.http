@@ -1,0 +1,6 @@
+@TGC.StarRealming.Api_HostAddress = http://localhost:5262
+
+GET {{TGC.StarRealming.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

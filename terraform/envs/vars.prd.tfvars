@@ -1,0 +1,5 @@
+environment      = "prd"
+location         = "westeurope"
+region_shortcode = "weu"
+b2c_country_code = "DK"
+b2c_sku          = "PremiumP2"
