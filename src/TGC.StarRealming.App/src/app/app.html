@@ -1,7 +1,13 @@
-<p-menubar [model]="items" />
+<p-menubar [model]="items">
+  <ng-template pTemplate="end">
+    @if (isLoggedIn()) {
+      <p-button label="Logout" (onClick)="logout()" />
+    } @else {
+      <p-button label="Login" (onClick)="login()" />
+    }
+  </ng-template>
+</p-menubar>
 
 <main class="main">
-
-<p-button label="Check" />
   <router-outlet />
 </main>

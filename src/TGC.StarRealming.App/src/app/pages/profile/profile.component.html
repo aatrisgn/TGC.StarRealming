@@ -1,0 +1,17 @@
+<div class="profile-container">
+  <h2>Profile</h2>
+  @if (account()) {
+    <div class="profile-details">
+      <div class="field">
+        <label>ID</label>
+        <span>{{ account()!.localAccountId }}</span>
+      </div>
+      <div class="field">
+        <label>Name</label>
+        <span>{{ account()!.name }}</span>
+      </div>
+    </div>
+  } @else {
+    <p>No user signed in.</p>
+  }
+</div>

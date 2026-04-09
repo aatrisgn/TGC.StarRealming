@@ -1,0 +1,30 @@
+.profile-container {
+  padding: 2rem;
+
+  h2 {
+    margin-bottom: 1.5rem;
+  }
+
+  .profile-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 400px;
+  }
+
+  .field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+
+    label {
+      font-weight: 600;
+      font-size: 0.875rem;
+      color: var(--p-text-muted-color);
+    }
+
+    span {
+      font-size: 1rem;
+    }
+  }
+}
