@@ -50,5 +50,5 @@ jobs:
       id: plan
       run: terraform plan -input=false -var-file="envs/vars.dev.tfvars" -out=tfplan #UPDATE VARS file
 
-    # - name: Terraform Apply
-    #   run: terraform apply -auto-approve tfplan
+    - name: Terraform Apply
+      run: terraform apply -auto-approve tfplan
