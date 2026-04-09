@@ -21,9 +21,9 @@ jobs:
         working-directory: ./terraform
     
     env:
-      ARM_CLIENT_ID: "${{ secrets.CLIENT_ID_SECRET_REFERENCE }}"
-      ARM_SUBSCRIPTION_ID: "${{ secrets.SUBSCRIPTION_ID_SECRET_REFERENCE }}"
-      ARM_TENANT_ID: "${{ secrets.TENANT_ID_SECRET_REFERENCE }}"
+      ARM_CLIENT_ID: "${{ secrets.STARREALMING_DEV_CLIENT_ID }}"
+      ARM_SUBSCRIPTION_ID: "${{ secrets.STARREALMING_DEV_SUBSCRIPTION_ID }}"
+      ARM_TENANT_ID: "${{ secrets.STARREALMING_DEV_TENANT_ID }}"
       ARM_USE_AZUREAD: true
 
     steps:
@@ -38,9 +38,9 @@ jobs:
     - name: Terraform Init
       run: |
         terraform init \
-        -backend-config=resource_group_name="${{ secrets.RESOURCE_GROUP_REFERENCE }}" \
-        -backend-config=storage_account_name="${{ secrets.STORAGE_ACCOUNT_REFERENCE }}" \
-        -backend-config=container_name="${{ secrets.CONTAINER_NAME_REFERENCE }}" \
+        -backend-config=resource_group_name="${{ secrets.STARREALMING_DEV_TFSTATE_RESOURCE_GROUP_NAME }}" \
+        -backend-config=storage_account_name="${{ secrets.STARREALMING_DEV_TFSTATE_STORAGE_ACCOUNT_NAME }}" \
+        -backend-config=container_name="${{ secrets.STARREALMING_DEV_TFSTATE_STORAGE_CONTAINER_NAME }}" \
         -backend-config=key="tgc.starrealming.dev.tfstate"
         
     # - name: Terraform Validate
