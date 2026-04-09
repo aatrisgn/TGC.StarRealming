@@ -1,6 +1,2 @@
 environment      = "dev"
-location         = "westeurope"
-region_shortcode = "weu"
-b2c_country_code = "DK"
-b2c_sku          = "PremiumP1"
 resource_group_name = "rg-starrealming-dev-westeurope"
