@@ -1,13 +1,3 @@
-variable "environment" {
-  description = "The deployment environment (dev, tst, prd)."
-  type        = string
-
-  validation {
-    condition     = contains(["dev", "tst", "prd"], var.environment)
-    error_message = "environment must be one of: dev, tst, prd."
-  }
-}
-
 variable "location" {
   description = "The Azure region for the resource group."
   type        = string
@@ -36,3 +26,19 @@ variable "b2c_sku" {
     error_message = "b2c_sku must be PremiumP1 or PremiumP2."
   }
 }
+
+variable "resource_group_name" {
+  description = "Azure resource group to deploy resources into"
+  type        = string
+}
+
+variable "environment" {
+  description = "environment type"
+  type        = string
+
+  validation {
+    condition     = contains(["dev", "prod"], var.environment)
+    error_message = "The environment variable must be either 'DEV' or 'PROD'."
+  }
+}
+
